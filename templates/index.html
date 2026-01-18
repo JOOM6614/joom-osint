@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOOM // OSINT PLATFORM</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scan-line"></div>
+    <div class="overlay"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="JOOM CONSULTAS">JOOM CONSULTAS</h1>
+            <p class="status">SYSTEM STATUS: <span class="blink">ONLINE</span></p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="INSERIR ALVO..." autocomplete="off">
+            <button onclick="performSearch()" id="btnSearch">EXECUTAR [ENTER]</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+            <p>DECIFRANDO PACOTES DE DADOS...</p>
+        </div>
+
+        <div id="resultsArea" class="results-grid">
+            </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
